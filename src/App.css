@@ -1,10 +1,16 @@
 body {
-    background-image: url('/stage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
-    height: 100vh;
-    background-position: center;
-    filter: grayscale(100%);
     color: wheat;
+    background: #E900EB;
+    background: -webkit-linear-gradient(to top right, #391CC1, #E900EB, #87BAFB);
+    background: linear-gradient(to top right, #391CC1, #E900EB, #87BAFB);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header__text {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
 }

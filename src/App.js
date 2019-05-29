@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Input from './components/Input'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="header">
         <h1 className="header__text">Sashay or Shantay?</h1>
       </header>
+      <Input />
     </div>
   );
 }
