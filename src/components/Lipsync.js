@@ -16,19 +16,29 @@ const Lipsync = props => {
         artist,
         queens
     } = data
-    // randomiser function
 
-    // fetch request
+    const checkQueen0 = (event) => {
+        return queens[0].won === true ? console.log('YAY, YOU\'RE RIGHT!') : console.log('OOPSIE, YOU LOST!')
+    }
 
-    // extract required variables and render on page
+    const checkQueen1 = (event) => {
+        return queens[1].won === true ? console.log('YAY, YOU\'RE RIGHT!') : console.log('OOPSIE, YOU LOST!')
+    }
+
 
     return (
         <div className="lipsync">
             <h2 className="lipsync__song"> {name} - {artist} </h2>
             <div className="lipsync__queens">
-                <button className="lipsync__queens--button queen--0" > {queens[0].name} </button>
+                <button className="lipsync__queens--button queen--0"
+                    onClick={checkQueen0}>
+                    {queens[0].name}
+                </button>
                 <p className="lipsync__vs"> VS </p>
-                <button className="lipsync__queens--button queen--1" > {queens[1].name} </button>
+                <button className="lipsync__queens--button queen--1"
+                    onClick={checkQueen1}>
+                    {queens[1].name}
+                </button>
             </div>
         </div>
     )
