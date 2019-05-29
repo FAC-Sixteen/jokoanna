@@ -1,11 +1,3 @@
-import React from 'react';
-
-export const randomiser = () => {
-    //ids between 1 and 134
-    const id = Math.floor(Math.random() * (135 - 1) + 1);
-    getData(id);
-}
-
 export const checkResponse = (response) => {
     if (response.status !== 200) {
         console.log(`Error with the request! ${response.status}`);
@@ -14,7 +6,8 @@ export const checkResponse = (response) => {
     return response.json();
 };
 
-export const getData = (id) => {
+export const getData = () => {
+    const id = Math.floor(Math.random() * (135 - 1) + 1);
     return fetch(`http://www.nokeynoshade.party/api/lipsyncs/${id}`)
         .then(checkResponse)
         .catch(err => {
