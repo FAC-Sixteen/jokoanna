@@ -17,12 +17,8 @@ const Lipsync = props => {
         queens
     } = data
 
-    const checkQueen0 = (event) => {
-        return queens[0].won === true ? console.log('YAY, YOU\'RE RIGHT!') : console.log('OOPSIE, YOU LOST!')
-    }
-
-    const checkQueen1 = (event) => {
-        return queens[1].won === true ? console.log('YAY, YOU\'RE RIGHT!') : console.log('OOPSIE, YOU LOST!')
+    const checkQueen = (num) => event => {
+        return queens[num].won === true ? console.log('YAY, YOU\'RE RIGHT!') : console.log('OOPSIE, YOU LOST!')
     }
 
 
@@ -31,12 +27,12 @@ const Lipsync = props => {
             <h2 className="lipsync__song"> {name} - {artist} </h2>
             <div className="lipsync__queens">
                 <button className="lipsync__queens--button queen--0"
-                    onClick={checkQueen0}>
+                    onClick={checkQueen(0)}>
                     {queens[0].name}
                 </button>
                 <p className="lipsync__vs"> VS </p>
                 <button className="lipsync__queens--button queen--1"
-                    onClick={checkQueen1}>
+                    onClick={checkQueen(1)}>
                     {queens[1].name}
                 </button>
             </div>
