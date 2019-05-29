@@ -1,0 +1,10 @@
+body {
+    background-image: url('/stage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+    background-position: center;
+    filter: grayscale(100%);
+    color: wheat;
+}
