@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import Input from './components/Input'
+import Input from './components/Input';
+import Lipsync from './components/Lipsync';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <h1 className="header__text">Sashay or Shantay?</h1>
       </header>
       <Input />
+      <Lipsync />
     </div>
   );
 }
