@@ -18,8 +18,8 @@ function App() {
 			{name ? (
 				<div>
 					<Counter name={name} score={score} setScore={setScore} />
+					<Message result={result}/>
 					<Lipsync result={result} setResult={setResult} score={score} setScore={setScore} />
-          <Message result={result}/>
 				</div>
 			) : (
 				<Input name={name} setName={setName} />

@@ -1,5 +1,6 @@
 import React from "react";
 import { getData } from "../utils/dataHelpers";
+import './Lipsync.css';
 
 const Lipsync = props => {
 
@@ -31,10 +32,10 @@ const Lipsync = props => {
   return (
     <div className="lipsync">
       <h2 className="lipsync__song">
-        {name} by {artist}
+        <span className='song-name'>{name}</span><span className='artist-name'>{artist}</span>
       </h2>
       <div className="lipsync__queens">
-        <p>Select the winning Queen:</p>
+        <h3 className='lipsync__question'>Which Queen survived this lipsync?</h3>
         <button
           className="lipsync__queens--button queen--0"
           onClick={checkQueen(0)}
