@@ -3,6 +3,7 @@ import './App.css';
 import Input from './components/Input';
 import Lipsync from './components/Lipsync';
 import Counter from './components/Counter';
+import Message from './components/Message';
 
 function App() {
 	const [name, setName] = React.useState('');
@@ -18,6 +19,7 @@ function App() {
 				<div>
 					<Counter name={name} score={score} setScore={setScore} />
 					<Lipsync result={result} setResult={setResult} score={score} setScore={setScore} />
+          <Message result={result}/>
 				</div>
 			) : (
 				<Input name={name} setName={setName} />
