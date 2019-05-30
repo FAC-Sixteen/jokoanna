@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# README
 
-## Available Scripts
+# 💃Sashay or Shantay?
+![](https://media.giphy.com/media/fe0djUlLYxXNu/giphy.gif)
 
-In the project directory, you can run:
+RuPaul's Drag Race lipsync guessing game built with React.
 
-### `npm start`
+Live Version: https://sashay-shantay.netlify.com/
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🌟Built by:
+[Joko](https://github.com/jokosanyang)
+[Anna](https://github.com/aniablaziak)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 👀Built with:
+- React
+- CSS
+- [Drag Race API](https://drag-race-api.readme.io/docs)
 
-### `npm test`
+## :cupid: How to set up:
+- run `npm start` to run the app in the development mode.
+- open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- run`npm test` to launch the tests in the interactive watch mode.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💎Goals
+![](https://media.giphy.com/media/3oEjHVDYh4jT4Kn5x6/giphy.gif)
+- two queens and a song, user chooses who won
+- who won?
+- winning or losing message (Condragulations! You've got a point! / I'm sorry, my dear, but your score is back to zero.)
+- regenerates a new lipsync after result
+- counter incrementing with user's score
 
-### `npm run build`
+### Stretch Goals
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://media.giphy.com/media/26BRFMUP9qlD6JMsw/giphy.gif)
+- pictures and quotes for each queen from another API call
+- failure/success message display as an overlay only for a few seconds
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 🍟Process
+- brainstorm and planning on paper
+![](https://i.imgur.com/YdXWxUl.jpg)
+- break down goals into tasks list
+- pair program using pomodoro method to switch and take regular breaks every 30 mins
+- write components
+- test
+- styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+![](https://media.giphy.com/media/zaQoDemTmS5zy/giphy.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![](https://media.giphy.com/media/d7p9a7hLN4i6XEgDwF/giphy.gif)
