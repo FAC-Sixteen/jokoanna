@@ -34,6 +34,7 @@ const Lipsync = props => {
         {name} by {artist}
       </h2>
       <div className="lipsync__queens">
+        <p>Select the winning Queen:</p>
         <button
           className="lipsync__queens--button queen--0"
           onClick={checkQueen(0)}
