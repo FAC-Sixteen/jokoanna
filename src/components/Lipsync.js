@@ -19,9 +19,12 @@ const Lipsync = props => {
     if (queens[num].won === true) {
       props.setResult("won");
       props.setScore(props.score + 1);
+      console.log(queens[0].won, queens[1].won)
     } else {
       props.setResult("lost");
       props.setScore(0);
+      console.log(queens[0].won, queens[1].won);
+      getData().then(data => setData(data))
     }
   };
 
