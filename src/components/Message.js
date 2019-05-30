@@ -1,4 +1,5 @@
 import React from 'react';
+import './Message.css'
 
 const Message = (props) => {
     let text = null;
@@ -10,7 +11,7 @@ const Message = (props) => {
 
 	return (
 		<div className="message">
-			<p>{text}</p>
+			<p>Condragulations! You've got a point!</p>
 		</div>
 	);
 };

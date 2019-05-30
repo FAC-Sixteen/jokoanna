@@ -1,19 +1,17 @@
 body {
     color: black;
     background: #E900EB;
-    /* background: -webkit-linear-gradient(to right, #391CC1 0%, #E900EB, #87BAFB);
-    background: linear-gradient(to top right, #391CC1, #E900EB, #87BAFB); */
-    background: -webkit-linear-gradient(to right, #391CC1 0%, #E900EB);
-    background: linear-gradient(to top right, #391cc1, #E900EB);
+    background: -webkit-linear-gradient(to right, #6455aa 0%, #E900EB);
+    background: linear-gradient(to top right, #6455aa, #E900EB);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .header__text {
     font-family: 'Lobster', cursive;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 2px 2px #E900EB;
+    text-shadow: 2px 2px rgba(90, 67, 192, 0.4);
 }

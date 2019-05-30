@@ -1,0 +1,10 @@
+.result {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.9rem;
+}
+
+.results__variable {
+    font-size: 1.3rem;
+    font-weight: bold;
+}

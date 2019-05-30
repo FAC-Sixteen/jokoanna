@@ -6,7 +6,7 @@ import Counter from './components/Counter';
 import Message from './components/Message';
 
 function App() {
-	const [name, setName] = React.useState('');
+	const [name, setName] = React.useState('Joko');
 	const [score, setScore] = React.useState(0);
 	const [result, setResult] = React.useState('');
 
