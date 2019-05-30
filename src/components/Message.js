@@ -1,11 +1,18 @@
 import React from 'react';
 
-const Message = props => {
-    return (
-        <div className='message'>
-            <p>{props.result==='won' ? 'Condragulations! You\'ve got a point!' : 'I\'m sorry my dear, but your score is back to 0.'}</p>
-        </div>
-    )
-}
+const Message = (props) => {
+    let text = null;
+	if (props.result === 'won') {
+		text = "Condragulations! You've got a point!";
+	} else if (props.result === 'lost') {
+		text = "I'm sorry my dear, but your score is back to 0.";
+	} else { text = null }
+
+	return (
+		<div className="message">
+			<p>{text}</p>
+		</div>
+	);
+};
 
 export default Message;
