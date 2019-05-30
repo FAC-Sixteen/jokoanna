@@ -4,8 +4,8 @@ const Input = props => {
     const [user, setUser] = React.useState('');
     const handleInput = event => setUser(event.target.value);
     return (
-        <form className="name-input">
-            <label htmlFor="name">Name:</label>
+        <form className="name-input" onSubmit={() => props.setName(user)}>
+            <label htmlFor="name">Name:
             <input
                 className="name-input__field"
                 type="text"
@@ -14,10 +14,10 @@ const Input = props => {
                 value={user}
                 onChange={handleInput}
             />
-            <button className="name-input__submit"
-            type='submit'
-            onClick={() => props.setName(user)}
-            >Submit</button>
+            </label>
+            <input className="name-input__submit"
+            type='submit' value='Submit'
+            />
         </form>
     )
 }
