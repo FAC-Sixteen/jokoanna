@@ -2,26 +2,33 @@ import React from "react";
 import { getData } from "../utils/dataHelpers";
 
 const Lipsync = props => {
+
   const [data, setData] = React.useState(null);
+
   React.useEffect(() => {
     getData().then(data => setData(data));
-  }, []);
+  }, [props.score]);
+
   if (!data) {
     return <h3 className="loading">Loading...</h3>;
   }
+
   const { id, name, artist, queens } = data;
 
   const checkQueen = num => event => {
-    return queens[num].won === true
-      ? console.log("YAY, YOU'RE RIGHT!")
-      : console.log("OOPSIE, YOU LOST!");
+    if (queens[num].won === true) {
+      props.setResult("won");
+      props.setScore(props.score + 1);
+    } else {
+      props.setResult("lost");
+      props.setScore(0);
+    }
   };
 
   return (
     <div className="lipsync">
       <h2 className="lipsync__song">
-        {" "}
-        {name} by {artist}{" "}
+        {name} by {artist}
       </h2>
       <div className="lipsync__queens">
         <button
