@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     font-size: 1.9rem;
+    height: 3.5rem;
 }
 
 .results__variable {

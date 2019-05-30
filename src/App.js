@@ -6,7 +6,7 @@ import Counter from './components/Counter';
 import Message from './components/Message';
 
 function App() {
-	const [name, setName] = React.useState('Joko');
+	const [name, setName] = React.useState('');
 	const [score, setScore] = React.useState(0);
 	const [result, setResult] = React.useState('');
 
@@ -18,8 +18,8 @@ function App() {
 			{name ? (
 				<div>
 					<Counter name={name} score={score} setScore={setScore} />
+					<Message result={result}/>
 					<Lipsync result={result} setResult={setResult} score={score} setScore={setScore} />
-          <Message result={result}/>
 				</div>
 			) : (
 				<Input name={name} setName={setName} />

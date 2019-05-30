@@ -51,7 +51,7 @@ font-weight: lighter;
     background-color: #87BAFB;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 5px #391cc1;
+    box-shadow: 0 5px #5a43c0ca;
   }
   
 .lipsync__queens--button:hover {
@@ -60,7 +60,7 @@ background-color: #87BAFB
 
 .lipsync__queens--button:active {
     background-color: #87BAFB;
-    box-shadow: 0 2px #666;
+    box-shadow: 0 2px #5a43c0ca;
     transform: translateY(4px);
 }
 

@@ -11,7 +11,7 @@ const Message = (props) => {
 
 	return (
 		<div className="message">
-			<p>Condragulations! You've got a point!</p>
+			<p>{text}</p>
 		</div>
 	);
 };
