@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = props => {
     const [user, setUser] = React.useState('');
-    const handleInput = event => setUser(event.target.value)
+    const handleInput = event => setUser(event.target.value);
     return (
         <form className="name-input">
             <label htmlFor="name">Name:</label>
