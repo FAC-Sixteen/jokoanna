@@ -1,74 +1,52 @@
-/* <div className="lipsync">
-      <h2 className="lipsync__song">
-        {name} by {artist}
-      </h2>
-      <div className="lipsync__queens">
-        <p>Select the winning Queen:</p>
-        <button
-          className="lipsync__queens--button queen--0"
-          onClick={checkQueen(0)}
-        >
-          {queens[0].name}
-        </button>
-        <p className="lipsync__vs"> VS </p>
-        <button
-          className="lipsync__queens--button queen--1"
-          onClick={checkQueen(1)}
-        >
-          {queens[1].name}
-        </button>
-      </div>
-    </div> */
-
 .lipsync {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .lipsync__song {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .song-name {
-font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .artist-name {
-font-size: 1.2em;
-font-weight: lighter;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 .lipsync__queens--button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: black;
-    background-color: #87BAFB;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px #5a43c0ca;
-  }
-  
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #87BAFB;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #5a43c0ca;
+}
+
 .lipsync__queens--button:hover {
-background-color: #87BAFB
+  background-color: #87BAFB
 }
 
 .lipsync__queens--button:active {
-    background-color: #87BAFB;
-    box-shadow: 0 2px #5a43c0ca;
-    transform: translateY(4px);
+  background-color: #87BAFB;
+  box-shadow: 0 2px #5a43c0ca;
+  transform: translateY(4px);
 }
 
 .lipsync__question {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .lipsync__vs {
-    font-weight: bold;
-    font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
