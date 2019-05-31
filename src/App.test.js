@@ -23,4 +23,4 @@ test('When name is submitted Lipsync is rendered', () => {
   const buttonNode = getByText('Submit');
   fireEvent.click(buttonNode);
   getByText('Loading...');
-}) 
+}); 
