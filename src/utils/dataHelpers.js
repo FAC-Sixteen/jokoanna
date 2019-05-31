@@ -8,7 +8,7 @@ export const checkResponse = (response) => {
 
 export const getData = () => {
     const id = Math.floor(Math.random() * (135 - 1) + 1);
-    return fetch(`http://www.nokeynoshade.party/api/lipsyncs/${id}`)
+    return fetch(`https://www.nokeynoshade.party/api/lipsyncs/${id}`)
         .then(checkResponse)
         .catch(err => {
             throw new Error(`fetch getData failed ${err}`);
