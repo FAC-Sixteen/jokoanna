@@ -1,5 +1,5 @@
-import React from 'react';
-import './Counter.css';
+import React from "react";
+import "./Counter.css";
 
 const Counter = props => {
 const { name, score } = props;
