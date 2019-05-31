@@ -2,10 +2,11 @@ import React from 'react';
 import './Message.css'
 
 const Message = (props) => {
+	const { result } = props;
     let text = null;
-	if (props.result === 'won') {
+	if (result === 'won') {
 		text = "Condragulations! You've got a point!";
-	} else if (props.result === 'lost') {
+	} else if (result === 'lost') {
 		text = "I'm sorry my dear, but your score is back to 0.";
 	} else { text = null }
 

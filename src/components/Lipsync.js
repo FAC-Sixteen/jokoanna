@@ -3,28 +3,26 @@ import { getData } from "../utils/dataHelpers";
 import './Lipsync.css';
 
 const Lipsync = props => {
-
+  const { setResult, setScore, score } = props;
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
     getData().then(data => setData(data));
-  }, [props.score]);
+  }, [score]);
 
   if (!data) {
     return <h3 className="loading">Loading...</h3>;
   }
 
-  const { id, name, artist, queens } = data;
+  const { name, artist, queens } = data;
 
   const checkQueen = num => event => {
     if (queens[num].won === true) {
-      props.setResult("won");
-      props.setScore(props.score + 1);
-      console.log(queens[0].won, queens[1].won)
+      setResult("won");
+      setScore(score + 1);
     } else {
-      props.setResult("lost");
-      props.setScore(0);
-      console.log(queens[0].won, queens[1].won);
+      setResult("lost");
+      setScore(0);
       getData().then(data => setData(data))
     }
   };
