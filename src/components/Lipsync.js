@@ -1,6 +1,6 @@
 import React from "react";
 import { getData } from "../utils/dataHelpers";
-import './Lipsync.css';
+import "./Lipsync.css";
 
 const Lipsync = props => {
   const { setResult, setScore, score } = props;
@@ -8,7 +8,7 @@ const Lipsync = props => {
 
   React.useEffect(() => {
     getData().then(data => setData(data));
-  }, [score]);
+  }, []);
 
   if (!data) {
     return <h3 className="loading">Loading...</h3>;
@@ -20,20 +20,24 @@ const Lipsync = props => {
     if (queens[num].won === true) {
       setResult("won");
       setScore(score + 1);
+      getData().then(data => setData(data));
     } else {
       setResult("lost");
       setScore(0);
-      getData().then(data => setData(data))
+      getData().then(data => setData(data));
     }
   };
 
   return (
     <div className="lipsync">
       <h2 className="lipsync__song">
-        <span className='song-name'>{name}</span><span className='artist-name'>{artist}</span>
+        <span className="song-name">{name}</span>
+        <span className="artist-name">{artist}</span>
       </h2>
       <div className="lipsync__queens">
-        <h3 className='lipsync__question'>Which Queen survived this lipsync?</h3>
+        <h3 className="lipsync__question">
+          Which Queen survived this lipsync?
+        </h3>
         <button
           className="lipsync__queens--button queen--0"
           onClick={checkQueen(0)}
